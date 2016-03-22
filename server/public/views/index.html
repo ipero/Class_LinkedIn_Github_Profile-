@@ -13,11 +13,11 @@
   </head>
   <body>
     <div ng-controller="IntroController">
-      
+
       <div ng-repeat="key in allStudents">
         <div class="student">
           <p>{{key.name }} </p>
-            <img src="{{ key.linkedIn }}" width="150" height="150"/>
+            <img ng-src=" {{ key.linkedIn }} " width="150" height="150"/>
             <a href="{{ key.github }}"> GitHub</a>
         </div>
 
