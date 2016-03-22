@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8" />
+    <title>First Angular app</title>
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="/assets/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+  </head>
+  <body>
+    <div ng-controller="IntroController">
+      
+      <div ng-repeat="key in allStudents">
+        <div class="student">
+          <p>{{key.name }} </p>
+            <img src="{{ key.linkedIn }}" width="150" height="150"/>
+            <a href="{{ key.github }}"> GitHub</a>
+        </div>
+
+
+      </div>
+
+    </div>
+  </body>
+</html>

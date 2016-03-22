@@ -1,0 +1,8 @@
+<p ng-hide="employee.name">Enter in your employee info!</p>
+<p ng-show="employee.name">Make sure you enter correct name!</p>
+
+<input ng-model="employee.name" type="text" placeholder="Enter name" />
+<input ng-model="employee.id" type="text" placeholder="Enter ID"  />
+<input ng-model="employee.salary" type="text" placeholder="Enter Salary"  />
+
+<button ng-click="saveEmployee(employee)">Save</button>
